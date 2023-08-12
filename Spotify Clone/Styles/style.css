@@ -1,0 +1,147 @@
+/* FOR SIDEBAR */
+
+/* Resets the page to 0 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+}
+
+/* INDEX PAGE */
+
+/* sidebar shape and position  */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #000000;
+    padding: 24px;
+}
+
+/* For Spotify Logo */
+.sidebar .logo svg {
+    width: 90px;
+    margin-right: 300px;
+}
+
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Targets the li and ul within the specific class */
+.sidebar .navigation ul li {
+    padding: 10px 0px;
+}
+
+/* text-decoration removes underlines */
+.sidebar .navigation ul li a {
+    color: #b9b8b8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* First selector and value removes bullet points */
+.sidebar .navigation ul,
+.sidebar .policies ul {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.navigation ul li img {
+    width: 12px;
+    height: 12px;
+}
+
+/* i:hover... is a pseudo-class selector that adds style to 
+elements in a specific state i.e when hovered over  */
+/* This changes the colour of the anchor tags (Home, search, 
+library) when hovered over */
+
+/* When you hover over the home icon or Home word, they will change colour */
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+    color: #ffffff;
+}
+
+.sidebar .navigation ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+/* When you hover over the search icon or Search word, they will change colour */
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa {
+    color: #b3b3b3;
+}
+
+/* hover = When you hover over the library icon or Library word, they will change colour */
+/* active = When you click button it will change colour */
+/* focus = When clicked (activated) it changes colour - so in order the client will hover, activate, focus */
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:active .fa:active,
+.sidebar .navigation ul li a:focus .fa:focus {
+    color: #ffffff;
+}
+
+.home,
+.search,
+.library {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* NAVIGATION 2 */
+
+.navigation a:hover .create-playlist,
+.navigation a:active .create-playlist,
+.navigation a:focus .create-playlist {
+    color: #ffffff;
+}
+
+.navigation a:hover .liked-songs,
+.navigation a:active .liked-songs,
+.navigation a:focus .liked-songs {
+    color: #ffffff;
+}
+
+.sidebar .policies {
+    position: absolute;
+    bottom: 100px;
+}
+
+.sidebar .policies a:active,
+.sidebar .policies a:hover,
+.sidebar .policies a:focus {
+    color: #ffffff;
+}
+
+.sidebar .policies ul {
+    list-style: none;
+}
+
+.sidebar .policies ul li {
+    padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a {
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus {
+    text-decoration: underline;
+}

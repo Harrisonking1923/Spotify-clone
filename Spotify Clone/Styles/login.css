@@ -1,0 +1,253 @@
+/* displya: block; centres the whole page */
+body {
+    display: block;
+    margin: 50px 325px 50px 325px;
+    display: block;
+    position: relative;
+    background-color: #b3b3b3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* display: flex; puts parent child items in a container as to allow for responsiveness */
+.toplogin {
+    display: flexbox;
+}
+
+.logo {
+    width: 30%;
+    height: 30%;
+    /* These centre the logo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* em vs px are units of measurement - px is the same every time 
+em is scaled relative to the parent element*/
+
+h1 {
+    color: #ffffff;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 650;
+}
+
+
+.form input {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0px 1px 0px;
+    background-color: #121212;
+    --text-base: #ffffff;
+    inline-size: 100%;
+    /*for full width of box*/
+    padding: 4px;
+    min-block-size: 48px;
+    font-size: 15px;
+}
+
+.form a {
+    color: #0a0808;
+}
+
+/* FORM CHECKBOX START */
+.toggle {
+    margin-top: 0px;
+}
+
+.form .toggle {
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+
+
+/* For email and password */
+/* input {
+    border: 2px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 1px;
+} */
+
+
+.checkbox {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1ed760;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* SLIDER START */
+/* Position of slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Changes colour of off  */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* slider properties   */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b3b3b3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* slider inner-circle */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* Changes colour to Spotify green when clicked */
+/* :checked pseudo-class selects elements when they are in the selected state. 
+Only associates with input elements of type="radio" and type="checkbox" whenchecked/toggled to 
+an on state*/
+input:checked+span {
+    background-color: #1ed760;
+}
+
+/* Creates shadow  */
+/* 'input:focus/input:checked span' & 'input:focus/input:checked .slider' are the same */
+input:focus+span {
+    box-shadow: 0 0 1px #1ed760;
+}
+
+/* :before and :after pseudo-class allows you to insert something before the content. Without this the 
+toggle before wont appear, only the after */
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded slider */
+.slider.round {
+    border-radius: 34px;
+}
+
+/* slider inner-circle */
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* SLIDER END */
+
+.toggle p {
+    position: inline-block;
+}
+
+/* FORM TOGGLE END */
+
+/* FORM END */
+
+/* LOGIN PAGE TOP END */
+
+
+/* LOGIN PAGE BOTTOM START */
+
+/* for button list */
+
+.soc-media button {
+    margin-left: auto;
+    margin-right: auto;
+
+  
+    inline-size: 100%;
+    /*for full width of box*/
+    padding: 4px;
+    min-block-size: 48px;
+    font-size: 15px;
+}
+.soc-media ul li {
+    list-style: none;
+    margin: 1em;
+}
+
+.soc-media ul li span {
+    padding: 0 0 0 30px;
+}
+
+/* for buttons specifically */
+.soc-media ul li button {
+    border: 1px #b3b3b3;
+    border-radius: 45px;
+    padding: 10px;
+    background: #121212;
+    color: white;
+    font-size: 1rem;
+    font-weight: 350;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.soc-media ul li span {
+    width: 1.5rem;
+    height: 1.5rem;
+   
+}
+.soc-media ul li button {
+
+}
+
+
+/* actions when buttons are hovered and clicked */
+.soc-media ul li a:hover,
+.soc-media ul li a:active,
+.soc-media ul li a:focus {
+    cursor: pointer;
+    border: 3px;
+}
+
+.soc-media ul li a:hover .fa,
+.soc-media ul li a:active .fa,
+.soc-media ul li a:focus .fa{
+    cursor: pointer;
+    border: 3px;
+}
+.soc-media ul li a:hover .fa:hover,
+.soc-media ul li a:active .fa:active,
+.soc-media ul li a:focus .fa:focus{
+    cursor: pointer;
+    border: 3px;
+}
+
+.soc-media ul li button:active,
+.soc-media ul li button:focus {
+    font-size: 11px;
+    font-weight: 400px;
+}
+

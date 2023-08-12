@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Styles/main-container.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link for Montserrat font which is the closest to the Spotify font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;
+0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66b2869aef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="all">
+        <!-- SIDEBAR START -->
+        <div class="sidebar">
+            <div class="logo">
+                <!-- Insert Spotify Logo here -->
+                <!-- anchor tag makes the button clickable -->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-spotify"
+                        viewBox="0 0 16 16" id="IconChangeColor">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 
+         11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696
+          5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 
+        0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986
+         1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 
+         1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z" id="mainIconPathAttribute"
+                            fill="green"></path>
+                    </svg>
+                </a>
+            </div>
+            <!-- NAVIGATION START -->
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-house"></span>
+                            <span class="home">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-magnifying-glass"></span>
+                            <span class="search">Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fas fa-book"></span>
+                            <span class="library">Your Library</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Second navigation creates a gap between the two -->
+            <div class="navigation">
+                <ul>
+                    <li class="create-playlist">
+                        <a href="#">
+                            <span class="fa fas fa-plus-square"></span>
+                            <span>Create Playlist</span>
+                        </a>
+                    </li>
+                    <li class="liked-songs">
+                        <a href="#">
+                            <img src="https://misc.scdn.co/liked-songs/liked-songs-640.png">
+                            <span>Liked songs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- NAVIGATION END -->
+            <!-- POLICIES START  -->
+            <div class="policies">
+                <ul>
+                    <li>
+                        <a href="#">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- POLICIES END  -->
+        </div>
+        <!-- SIDEBAR END -->
+
+        <!-- MAIN CONTAINER START -->
+        <div class="main-container">
+            <!-- TOPBAR START -->
+            <!-- Horizontal bar top of page -->
+            <div class="topbar">
+
+                <!-- Arrows at top of page for page back/forward -->
+                <div class="previous-next-buttons">
+                    <button type="button" class="fa fas fa-chevron-left"></button>
+                    <button type="button" class="fa fas fa-chevron-right"></button>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#">Premium</a>
+                        </li>
+                        <li>
+                            <a href="#">Suppport</a>
+                        </li>
+                        <li>
+                            <a href="#">Download</a>
+                        </li>
+                        <li class="divider">|</li>
+                        <li>
+                            <a href="#">Sign up</a>
+                        </li>
+                    </ul>
+                    <button type="button">Log in</button>
+                </div>
+            </div>
+            <!-- TOPBAR END -->
+
+            <!-- IMAGES START -->
+            <div class="images">
+                <!-- ROW 1  -->
+                <h2>Daily Mix</h2>
+                <div class="list">
+                    <!-- Each img has to be its own item so you can add title -->
+                    <div class="item">
+                        <img
+                            src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb440959e022afc20e819050bd/1/en-GB/default">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Daily mix 1</h4>
+                        <p>The Doors, The Rolling Stones and The Yardbirds...</p>
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebdead744163b14dc0ea8ad01f/2/en-GB/default">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Daily mix 2</h4>
+                        <p>Oasis, The Stone Roses, The Smiths...</p>
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://dailymix-images.scdn.co/v2/img/62458dad056210b6511d375b8a590ac52d551d3f/3/en-GB/default">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Daily mix 3</h4>
+                        <p>Funkadelic, Marvin Gaye, Curtis Mayfield and more...</p>
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb249d55f2d68a44637905c57e/4/en-GB/default">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Daily mix 4</h4>
+                        <p>Fleetwood Mac, Chicago, ELO and more...</p>
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb1592cf6c47b2fa3848c41eea/5/en-GB/default">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Daily mix 5</h4>
+                        <p>Tame Impala, Mac deMarco and more...</p>
+                    </div>
+                </div>
+                <br>
+                <h2>Recommended for Aadam</h2>
+                <div class="list">
+                    <!-- ROW 2 -->
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d3709135d1005baa36939d80">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Pink Floyd</h4>
+                        <p>Dark Side Of The Moon</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27304f9045679521c42ffebdc8d">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Funkadelic</h4>
+                        <p>Funkadelic</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27325b055377757b3cdd6f26b78">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Kanye West</h4>
+                        <p>The College Dropout</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000e1a3b51f29d1c278ef1e738d6e4b">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>John Coltrane</h4>
+                        <p>Giant Steps (1960)</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02c9adfbd773852e286faed040">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>The Jimi Hendrix Experience</h4>
+                        <p>Are You Experienced</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732af30c881bb23cfb82a8cf99">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>The Rolling Stones</h4>
+                        <p>Let It Bleed</p>
+                    </div>
+                </div>
+                <br>
+                <h2>Recommended for Harrison</h2>
+                <div class="list">
+                    <!-- ROW 3 -->
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67706f00000002df67fcfccb274659e2e0518b">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Jazz and Funk</h4>
+                        <p>Get down and dirty with these groovy tracks</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67fb8200005caf271f9d895003c5f5561c1354">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Mood Boosters</h4>
+                        <p>Get that dopamine kick with these feel-good tunes</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67fb8200005caf341265d27be641506e56c346">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Daily Drive</h4>
+                        <p>On the road? We have the perfect list to keep you going...</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0208523a140470c744ef8ebcae">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>James Brown</h4>
+                        <p>Get up like a sex-machine man, doing it you know? Can I count it off?</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/5f70d98d3e4616a02a3afe2aa9a840b9157b92a1">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Beatles playlist</h4>
+                        <p>The perfect playlist to complement psychedelic drugs</p>
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://mosaic.scdn.co/640/ab67616d00001e0221ef301217c69ef3f1be3803ab67616d00001e0238557ed7e3ce34225e28d4c0ab67616d00001e02d4cbc712774c49532e7bbd3cab67616d00001e02e60d4fceeed2d3a2633b0d8a">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Classical Pieces</h4>
+                        <p>Listen to the sickest drops of the 18th Century</p>
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://mosaic.scdn.co/300/ab67616d00001e021d5722b8fcd845fe376dd4a0ab67616d00001e022d52b64a8ee2b4bfa55ec05bab67616d00001e0231355fb0f556ede9c6b651cdab67616d00001e02ed1a52850aeadda4da46ecb0">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Club Mix</h4>
+                        <p>Every song you need for a rave</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67706f00000002a37256f94f873658dfd43bb6">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Alternative 60's</h4>
+                        <p>Hard Rock, Blues, Psychedelia and more...</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab6761610000101fe9348cc01ff5d55971b22433">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>60's</h4>
+                        <p>Listen to hits from the best decade in music</p>
+                    </div>
+                </div>
+                <br>
+                <h2>Recommended Artists</h2>
+                <div class="list">
+                    <!-- ROW 4 -->
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e020ebc17239b6b18ba88cfb8ca">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Miles Davis</h4>
+                        <p>Kind of Blue</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27393a3bb62961a598ecaad1f75">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Cream</h4>
+                        <p>Fresh Cream</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000e1a3a07cc88003498f7559787673">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>War</h4>
+                        <p>Why Can't We Be Friends?</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ea42191f549dce4d9c8ecd1a">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>John Coltrane</h4>
+                        <p>A Love Supreme</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02dc30583ba717007b00cceb25">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Beatles</h4>
+                        <p>Abbey Road</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000e1a300ace5d3c5bffc123ef1eb51">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>The Dave Brubeck Quartet</h4>
+                        <p>Time Out</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000e1a35d20a64aabf010238688f3d2">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+
+                        <h4>The Allman Brothers Band</h4>
+                        <p>Live Fillmore East</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273f7d3ba2473d4452b83ba61c4">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Cream</h4>
+                        <p>Disraeli Gears</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d00001e025c7731f5acdcb2d02d78b7ee">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Cream</h4>
+                        <p>Wheels Of Fire</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab676161000051747cbee35180b7d2762fe930ad">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Fat Freddies Drop</h4>
+                        <p>Greatest Hits</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273edf91cd0c0b08afbcf20f6d1">
+                        <div class="play">
+                            <span class="fa fa-play"></span>
+                        </div>
+                        <h4>Funkadelic</h4>
+                        <p>Maggot Brain</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Preview goes at the bottom of the page -->
+        <div class="preview">
+            <div class="text">
+                <h6>PREVIEW OF SPOTIFY</h6>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card
+                    needed.</p>
+            </div>
+            <div class="button">
+                <button type="button">Sign up for free</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
